@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A616963F2B6933CA0029C7EA /* To_Do_LijstjeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616963E2B6933CA0029C7EA /* To_Do_LijstjeApp.swift */; };
-		A61696412B6933CA0029C7EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61696402B6933CA0029C7EA /* ContentView.swift */; };
-		A61696432B6933CA0029C7EA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61696422B6933CA0029C7EA /* Item.swift */; };
 		A61696452B6933CA0029C7EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61696442B6933CA0029C7EA /* Assets.xcassets */; };
 		A61696492B6933CA0029C7EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61696482B6933CA0029C7EA /* Preview Assets.xcassets */; };
+		A61696522B6935470029C7EA /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61696512B6935470029C7EA /* TodoModel.swift */; };
+		A61696572B69363F0029C7EA /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61696562B69363F0029C7EA /* TodoListView.swift */; };
+		A61696592B6936D60029C7EA /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61696582B6936D60029C7EA /* ListRowView.swift */; };
+		A616965B2B6936FC0029C7EA /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616965A2B6936FC0029C7EA /* AddTodoView.swift */; };
+		A616965D2B69372F0029C7EA /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616965C2B69372F0029C7EA /* NoItemView.swift */; };
+		A616965F2B6937890029C7EA /* SwiftUITodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616965E2B6937890029C7EA /* SwiftUITodoApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A616963B2B6933CA0029C7EA /* To-Do Lijstje.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do Lijstje.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A616963E2B6933CA0029C7EA /* To_Do_LijstjeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_LijstjeApp.swift; sourceTree = "<group>"; };
-		A61696402B6933CA0029C7EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A61696422B6933CA0029C7EA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A61696442B6933CA0029C7EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61696462B6933CA0029C7EA /* To_Do_Lijstje.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = To_Do_Lijstje.entitlements; sourceTree = "<group>"; };
 		A61696482B6933CA0029C7EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A61696512B6935470029C7EA /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		A61696562B69363F0029C7EA /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		A61696582B6936D60029C7EA /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		A616965A2B6936FC0029C7EA /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		A616965C2B69372F0029C7EA /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
+		A616965E2B6937890029C7EA /* SwiftUITodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITodoApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +62,9 @@
 		A616963D2B6933CA0029C7EA /* To-Do Lijstje */ = {
 			isa = PBXGroup;
 			children = (
-				A616963E2B6933CA0029C7EA /* To_Do_LijstjeApp.swift */,
-				A61696402B6933CA0029C7EA /* ContentView.swift */,
-				A61696422B6933CA0029C7EA /* Item.swift */,
+				A616964F2B6934F60029C7EA /* ViewModels */,
 				A61696442B6933CA0029C7EA /* Assets.xcassets */,
+				A616965E2B6937890029C7EA /* SwiftUITodoApp.swift */,
 				A61696462B6933CA0029C7EA /* To_Do_Lijstje.entitlements */,
 				A61696472B6933CA0029C7EA /* Preview Content */,
 			);
@@ -70,6 +77,35 @@
 				A61696482B6933CA0029C7EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A616964F2B6934F60029C7EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A616963E2B6933CA0029C7EA /* To_Do_LijstjeApp.swift */,
+				A61696502B6935340029C7EA /* Models */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A61696502B6935340029C7EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A61696512B6935470029C7EA /* TodoModel.swift */,
+				A61696532B69360A0029C7EA /* View */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A61696532B69360A0029C7EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A61696562B69363F0029C7EA /* TodoListView.swift */,
+				A61696582B6936D60029C7EA /* ListRowView.swift */,
+				A616965A2B6936FC0029C7EA /* AddTodoView.swift */,
+				A616965C2B69372F0029C7EA /* NoItemView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61696412B6933CA0029C7EA /* ContentView.swift in Sources */,
-				A61696432B6933CA0029C7EA /* Item.swift in Sources */,
+				A61696522B6935470029C7EA /* TodoModel.swift in Sources */,
+				A616965D2B69372F0029C7EA /* NoItemView.swift in Sources */,
+				A616965B2B6936FC0029C7EA /* AddTodoView.swift in Sources */,
+				A616965F2B6937890029C7EA /* SwiftUITodoApp.swift in Sources */,
+				A61696572B69363F0029C7EA /* TodoListView.swift in Sources */,
 				A616963F2B6933CA0029C7EA /* To_Do_LijstjeApp.swift in Sources */,
+				A61696592B6936D60029C7EA /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
