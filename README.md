@@ -14,5 +14,7 @@ Git Clone: https://github.com/a-racaj/To-Do-Lijstje.git
 ```bash
 Command R
 ```
+3. Welkom!
+
 ## Auteur
 Geschreven door Alban Racaj Student Bit-Academy Opdracht Keuzedeel Verdieping Software 2
